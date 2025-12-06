@@ -1,0 +1,25 @@
+/* a pinch of reset */
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+/* animated gradient background */
+body{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:'Segoe UI',Tahoma,sans-serif;
+    background: linear-gradient(-45deg,#7f00ff,#e100ff,#00e0ff,#00ff6a);
+    background-size:400% 400%;
+    animation: bgMove 15s ease infinite;
+}
+
+/* slow color shift animation */
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
