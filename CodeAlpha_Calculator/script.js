@@ -49,13 +49,20 @@ function speakTyping(input) {
   }
 }
 
-// --- Evaluate user expression ---
+// --- Evaluate user expression safely ---
 function calculate() {
-  let exp = currentInput
-    .replace(/x/g, '*')
-    .replace(/÷/g, '/')
-    .replace(/−/g, '-');
-  const result = eval(exp);
-  currentInput = result.toString();
+  try {
+    let exp = currentInput
+      .replace(/x/g, '*')
+      .replace(/÷/g, '/')
+      .replace(/−/g, '-');
+
+    const result = eval(exp);
+    currentInput = result.toString();
+    speakIt('Answer is ' + result); // Alexa says the result
+  } catch (err) {
+    currentInput = 'Error';
+    speakIt('Error');
+  }
   updateDisplay();
 }
