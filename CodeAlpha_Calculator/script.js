@@ -53,7 +53,7 @@ function speakTyping(input) {
 function calculate() {
   try {
     let exp = currentInput
-      .replace(/x/g, '*')
+      .replace(/×/g, '*')
       .replace(/÷/g, '/')
       .replace(/−/g, '-');
 
@@ -111,3 +111,9 @@ document.addEventListener('keydown', e => {
   }
   updateDisplay();
 });
+
+// --- Preload voices to ensure Alexa-like tone ---
+window.speechSynthesis.onvoiceschanged = () => {
+  // Forces loading voices early
+  speechSynthesis.getVoices();
+};
