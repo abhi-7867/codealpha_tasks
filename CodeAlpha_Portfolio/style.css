@@ -57,3 +57,56 @@ header {
 }
 
 /* fine header  */
+
+.home {
+  margin: 160px 200px;
+}
+
+.home-container {
+  display: flex;
+  gap: 6rem;
+}
+
+.home-p {
+  color: black;
+  background-color: rgba(128, 128, 128, 0.214);
+  display: inline-block;
+  border-radius: 25px;
+  padding: 5px 10px;
+  margin-bottom: 30px;
+}
+
+.home-s {
+  font-weight: bold;
+  color: green;
+}
+
+.info-home h1 {
+  font-size: 70px;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 20px;
+}
+
+.info-home h3 {
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 20px;
+}
+
+.info-p {
+  color: #222;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 20px;
+}
+
+.info-p p {
+  padding-bottom: 5px;
+}
+
+.info-p2 {
+  display: flex;
+  gap: 1rem;
+  color: #2c2c2c;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
