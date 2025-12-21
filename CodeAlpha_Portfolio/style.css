@@ -110,3 +110,32 @@ header {
   font-size: 14px;
   padding-bottom: 20px;
 }
+
+.btnn {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 30px;
+}
+
+.btn-home1 {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+.btn-home2 {
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btn-home2:hover{
+    background-color: #000000;
+    color: #fff;
+}
