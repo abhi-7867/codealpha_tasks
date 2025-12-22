@@ -222,3 +222,33 @@ hr {
 .about h2{
     padding-bottom: 30px;
 }
+
+.card{
+    display: flex;
+    gap: 2rem;
+}
+
+.c1{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid black;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.c1 h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.c1:hover {
+  transform: translateY(-6px) scale(1.03);
+  border-color: #ff3333;               
+  background-color: #fff5f5;               
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);  
+  cursor: pointer;                         
+}
