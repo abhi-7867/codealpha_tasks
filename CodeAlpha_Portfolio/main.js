@@ -20,3 +20,15 @@ navLinks.forEach(link => {
     link.parentElement.classList.add('active');
   });
 });
+
+window.addEventListener('scroll', () => {
+  let scrollPos = window.scrollY + 100;
+
+  sections.forEach(section => {
+    if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
+      removeActive();
+      const activeLink = document.querySelector(`.ul-list li a[href="#`+`${section.id}"]`);
+      if (activeLink) activeLink.parentElement.classList.add('active');
+    }
+  });
+});
