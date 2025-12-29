@@ -32,6 +32,12 @@ window.addEventListener('scroll', () => {
     }
   });
 
+  if(window.scrollY > 500){
+    backToTop.style.display = "flex";
+  } else {
+    backToTop.style.display = "none";
+  }
+
   revealElements.forEach(el => {
     const windowHeight = window.innerHeight;
     const elementTop = el.getBoundingClientRect().top;
@@ -45,3 +51,32 @@ window.addEventListener('scroll', () => {
 
 const revealElements = document.querySelectorAll('.home-container, .about-container, .projects-container, .services-container, .contact-content');
 revealElements.forEach(el => el.classList.add('reveal'));
+
+const backToTop = document.createElement('div');
+backToTop.innerHTML = '<i class="fa-solid fa-chevron-up"></i>';
+backToTop.id = "back-to-top";
+document.body.appendChild(backToTop);
+
+backToTop.style.cssText = `
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background: #474af0;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+`;
+
+backToTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+backToTop.addEventListener('mouseover', () => backToTop.style.transform = 'scale(1.2)');
+backToTop.addEventListener('mouseout', () => backToTop.style.transform = 'scale(1)');
