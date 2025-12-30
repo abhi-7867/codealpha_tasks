@@ -80,3 +80,9 @@ backToTop.addEventListener('click', () => {
 
 backToTop.addEventListener('mouseover', () => backToTop.style.transform = 'scale(1.2)');
 backToTop.addEventListener('mouseout', () => backToTop.style.transform = 'scale(1)');
+
+const cards = document.querySelectorAll('.project-card, .c1, .service-card');
+cards.forEach(card => {
+  card.addEventListener('mouseenter', () => card.style.transform = 'translateY(-8px) scale(1.05)');
+  card.addEventListener('mouseleave', () => card.style.transform = 'translateY(0) scale(1)');
+});
