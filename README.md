@@ -13,3 +13,9 @@ A responsive personal portfolio website with smooth scrolling, loading screen
 animation, typewriter effect, and scroll-reveal animations.
 
 ## Tech Stack
+- HTML5
+- CSS3 (animations, grid, flexbox)
+- Vanilla JavaScript (Web Speech API, DOM manipulation)
+
+## Author
+Abhishek | Frontend Developer Intern @ CodeAlpha
