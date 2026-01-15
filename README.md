@@ -19,3 +19,7 @@ animation, typewriter effect, and scroll-reveal animations.
 
 ## Author
 Abhishek | Frontend Developer Intern @ CodeAlpha
+
+---
+
+*Last updated: January 2026*
