@@ -23,3 +23,18 @@ body{
     50%{background-position:100% 50%;}
     100%{background-position:0% 50%;}
 }
+
+/* calculator body with fake 3D look */
+.calculator{
+    width:320px;
+    background:linear-gradient(145deg,#1e1e1e,#2d2d2d);
+    padding:20px;
+    border-radius:20px;
+    box-shadow: 10px 10px 25px rgba(0,0,0,0.5),
+                -10px -10px 25px rgba(255,255,255,0.08);
+    transform: perspective(800px) rotateX(5deg);
+    transition: transform .4s ease;
+}
+.calculator:hover{
+    transform: perspective(800px) rotateX(0deg) translateY(-5px);
+}
