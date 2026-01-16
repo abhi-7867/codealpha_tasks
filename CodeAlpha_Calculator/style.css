@@ -38,3 +38,16 @@ body{
 .calculator:hover{
     transform: perspective(800px) rotateX(0deg) translateY(-5px);
 }
+
+/* glowing digital display */
+.display{
+    background:#05081a;
+    color:#36ff8f;
+    height:60px;
+    line-height:60px;
+    text-align:right;
+    font-size:2rem;
+    padding:0 10px;
+    border-radius:8px;
+    margin-bottom:18px;
+}
