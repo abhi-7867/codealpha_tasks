@@ -74,3 +74,13 @@ button{
                -4px -4px 10px rgba(255,255,255,0.05);
     transition: all .2s ease;
 }
+button:hover{
+    transform:translateY(-4px);
+    box-shadow:8px 8px 16px rgba(0,0,0,0.6),
+               -4px -4px 10px rgba(255,255,255,0.08);
+}
+button:active{
+    transform:translateY(2px);
+    box-shadow:inset 4px 4px 8px rgba(0,0,0,0.6),
+               inset -4px -4px 8px rgba(255,255,255,0.05);
+}
