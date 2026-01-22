@@ -96,3 +96,8 @@ button:active{
 .clear{
     background:linear-gradient(145deg,#d11a2a,#ff334c);
 }
+
+/* slight glowing hover for special buttons */
+.operator:hover,.equal:hover,.clear:hover{
+    filter:brightness(1.15);
+}
