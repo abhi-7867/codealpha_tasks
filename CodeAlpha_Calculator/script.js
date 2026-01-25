@@ -21,4 +21,14 @@ function speakIt(text) {
         v.name.toLowerCase().includes('alexa')
       ) ||
       voices.find(v =>
+        v.name.toLowerCase().includes('english')
+      ) ||
+      voices[0];
+    say.voice = alexaVoice;
+    say.rate = 1;   // speaking speed
+    say.pitch = 1;  // natural Alexa-like tone
+    speechSynthesis.speak(say);
+  } else {
+    console.log('Speech synthesis not supported in this browser.');
+  }
 }
