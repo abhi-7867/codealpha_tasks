@@ -32,3 +32,19 @@ function speakIt(text) {
     console.log('Speech synthesis not supported in this browser.');
   }
 }
+
+// --- Speak every time user types ---
+function speakTyping(input) {
+  if ('speechSynthesis' in window) {
+    const say = new SpeechSynthesisUtterance(input);
+    const voices = speechSynthesis.getVoices();
+    const alexaVoice =
+      voices.find(v => v.name.toLowerCase().includes('alexa')) ||
+      voices.find(v => v.name.toLowerCase().includes('english')) ||
+      voices[0];
+    say.voice = alexaVoice;
+    say.rate = 1.2;
+    say.pitch = 1;
+    speechSynthesis.speak(say);
+  }
+}
