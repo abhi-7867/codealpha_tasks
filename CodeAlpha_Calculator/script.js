@@ -48,3 +48,14 @@ function speakTyping(input) {
     speechSynthesis.speak(say);
   }
 }
+
+// --- Evaluate user expression ---
+function calculate() {
+  let exp = currentInput
+    .replace(/x/g, '*')
+    .replace(/÷/g, '/')
+    .replace(/−/g, '-');
+  const result = eval(exp);
+  currentInput = result.toString();
+  updateDisplay();
+}
