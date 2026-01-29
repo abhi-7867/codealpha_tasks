@@ -66,3 +66,23 @@ function calculate() {
   }
   updateDisplay();
 }
+
+// --- Handle button clicks ---
+buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const val = btn.textContent;
+
+    if (val === 'C') {
+      currentInput = '';
+    } else if (val === '⌫') {
+      currentInput = currentInput.slice(0, -1);
+    } else if (val === '=') {
+      calculate();
+      return;
+    } else {
+      currentInput += val;
+      speakTyping(val); // 🔊 Alexa speaks while typing
+    }
+    updateDisplay();
+  });
+});
