@@ -86,3 +86,21 @@ buttons.forEach(btn => {
     updateDisplay();
   });
 });
+
+// --- Keyboard support ---
+document.addEventListener('keydown', e => {
+  const key = e.key;
+
+  if (
+    (key >= '0' && key <= '9') ||
+    key === '.' ||
+    key === '+' ||
+    key === '-' ||
+    key === '*' ||
+    key === '/'
+  ) {
+    currentInput += key;
+    speakTyping(key); // 🔊 Speak keypress
+  }
+  updateDisplay();
+});
