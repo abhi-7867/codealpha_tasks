@@ -101,6 +101,13 @@ document.addEventListener('keydown', e => {
   ) {
     currentInput += key;
     speakTyping(key); // 🔊 Speak keypress
+  } else if (key === 'Enter') {
+    calculate();
+    return;
+  } else if (key === 'Backspace') {
+    currentInput = currentInput.slice(0, -1);
+  } else if (key === 'Escape') {
+    currentInput = '';
   }
   updateDisplay();
 });
