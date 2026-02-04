@@ -50,3 +50,48 @@ It uses **Web Speech API** to read numbers, operations, and results aloud in rea
 
 Keyboard Shortcuts:
 | Key | Action |
+|-----|--------|
+| `0–9`, `+`, `-`, `*`, `/`, `.` | Add input |
+| `Enter` | Calculate result |
+| `Backspace` | Delete last input |
+| `Escape` | Clear display |
+
+---
+
+## 🖼️ Demo Images
+
+| Main Interface                   |  Calculation Example               |
+|----------------------------------|-------------------------------------|
+| ![Main UI](images/demo_main.png) | ![Calculate](images/demo-calc.png) |
+
+
+---
+
+## 💡 How It Works
+
+- Uses `speechSynthesis` from the **Web Speech API** to speak words.
+- Detects Alexa or English voices if available, ensuring natural tone and pronunciation.
+- Every time a key is pressed, it triggers `speakTyping()` for live voice feedback.
+- When a calculation is made, it triggers `speakIt()` to announce the final result.
+
+---
+
+## 🧑‍💻 Author
+
+**Abhishek Singh**
+Frontend Developer & JavaScript Enthusiast
+📍 Based in India
+
+- 🌐 [LinkedIn](https://www.linkedin.com/in/abhishek-singh-84808738a/)
+- 💻 [GitHub](https://github.com/royalboss444)
+- 📧 abhi@example.com
+
+---
+
+## 📜 License
+
+This project is open-source and available under the **MIT License**.
+
+---
+
+⭐ *If you like this project, please star the repo and share it!* ⭐
