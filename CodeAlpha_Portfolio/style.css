@@ -139,3 +139,40 @@ header {
     background-color: #000000;
     color: #fff;
 }
+
+hr {
+  width: 90%;
+  font-weight: bold;
+  color: gray;
+}
+
+.hhr {
+  padding-bottom: 30px;
+}
+
+.follow {
+  display: flex;
+  gap: 1rem;
+}
+
+.follow ul {
+  display: flex;
+  gap: 2rem;
+  font-size: 20px;
+}
+
+.follow ul li {
+  list-style: none;
+}
+
+.follow ul a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.home img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+/* fine home  */
