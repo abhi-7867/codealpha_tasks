@@ -778,3 +778,80 @@ body {
     gap: 15px;
   }
 }
+
+@media (max-width: 1024px) {
+
+  header {
+    display: none;
+  }
+
+  .home, .about, .project, .services, .contact {
+    margin: 20px auto;
+    padding: 0 15px;
+    text-align: center;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .home-container,
+  .about-container,
+  .services-container,
+  .projects-container,
+  .contact-content,
+  .card {
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .about img {
+    width: 100%;
+    max-width: 220px; 
+    height: auto;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1; 
+  }
+
+  .card .c1 {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .home img,
+  .project-card img,
+  .service-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto;
+    object-fit: cover;
+  }
+
+  .info-home h1 { font-size: 26px; }
+  .info-home h3 { font-size: 18px; }
+  .info-p, .info-p2, .home-p, .about p, .project p, .service-card p, .contact p {
+    font-size: 14px;
+  }
+  .project-card h3, .service-card h3 { font-size: 16px; }
+
+  .contact-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-info, .contact-form {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  html, body {
+    overflow-x: hidden;
+  }
+}
+}
