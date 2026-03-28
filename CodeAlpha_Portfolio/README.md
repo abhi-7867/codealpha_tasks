@@ -53,3 +53,54 @@ Designed to create a smooth and elegant user experience with animations, interac
 - **Contact:** Contact form and social links for communication.
 - **Footer:** Copyright and social profiles.
 
+---
+
+## 🖼️ Demo Images
+
+Below are some preview screenshots of the portfolio website:
+
+| Home Page | About Section | Projects Showcase |
+|------------|----------------|-------------------|
+| ![Home](images/demo/home.png) | ![About](images/demo/about.png) | ![Projects](images/demo/projects.png) |
+
+| Services Section | Contact Page |
+|------------------|---------------|
+| ![Services](images/demo/services.png) | ![Contact](images/demo/contact.png) 
+
+
+---
+
+## 💡 How to Run Locally
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/royalboss444/codealpha_tasks/CodeAlpha_Calculator.git
+   ```
+2. Open the folder:
+   ```bash
+   cd portfolio-website
+   ```
+3. Run the website:
+   - Simply open `index.html` in any modern browser.
+
+---
+
+## 🧑‍💻 Author
+
+**Abhishek Singh**
+Frontend Developer & UI Designer
+📍 Based in India
+
+- 🌐 [LinkedIn](https://www.linkedin.com/in/abhishek-singh-84808738a/)
+- 💻 [GitHub](https://github.com/royalboss444)
+
+
+---
+
+## 📜 License
+
+This project is open-source and available under the **MIT License**.
+
+---
+
+⭐ *If you like this project, don't forget to star the repo!* ⭐
