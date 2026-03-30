@@ -21,3 +21,5 @@ animation, typewriter effect, and scroll-reveal animations.
 Abhishek | Frontend Developer Intern @ CodeAlpha
 
 ---
+
+*Last updated: January 2026*
